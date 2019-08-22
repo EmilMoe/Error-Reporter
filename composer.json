@@ -12,6 +12,11 @@
             "email": "emil@moegroup.dk"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "EmilMoe\\ErrorReporter\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
