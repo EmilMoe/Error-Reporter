@@ -15,7 +15,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "EmilMoe\\ErrorReporter\\ErrorReporterServiceProvider"
+                "EmilMoe\\ErrorReporter\\ServiceProvider"
             ]
         }
     }
