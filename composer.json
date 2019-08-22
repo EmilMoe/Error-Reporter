@@ -1,0 +1,22 @@
+{
+    "name": "emilmoe/error-reporter",
+    "description": "Reports errors and exceptions for analysis. Works in background and does not interrupt Laravel error output.",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "laravel/framework": "^5.8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emil Moe",
+            "email": "emil@moegroup.dk"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EmilMoe\\ErrorReporter\\ErrorReporterServiceProvider"
+            ]
+        }
+    }
+}
