@@ -32,6 +32,9 @@ class Handler extends LaravelHandler
                 'ip'                => ip2long(getenv('REMOTE_ADDR')),
                 'useragent'         => getenv('HTTP_USER_AGENT'),
                 'url'               => url()->full(),
+                'response_code'     => app('Illuminate\Http\Response')->status(),
+                'app_name'          => env('APP_NAME'),
+                'app_environment'   => env('APP_ENV'),
             ]
         ]);
     }
