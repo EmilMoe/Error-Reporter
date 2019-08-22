@@ -9,10 +9,10 @@ return [
     /**
      * Client ID.
      */
-    'client_id' => 1,
+    'client_id' => env('ERROR_REPORTER_CLIENT_ID'),
 
     /**
      * Client Secret.
      */
-    'client_secret' => '8ceaYjPWLQ4EAWlEmslgFIbA4f2WODTEmpIWsm9t',
+    'client_secret' => env('ERROR_REPORTER_SECRET'),
 ];
