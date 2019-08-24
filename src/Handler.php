@@ -9,9 +9,16 @@ use GuzzleHttp\Client;
 
 class Handler extends LaravelHandler
 {
+    /**
+     * @param Exception $e
+     */
     public function report(Exception $e)
     {
         parent::report($e);
+
+        if (! in_array(env('APP_ENV'), config('error-reporter.environments'))) {
+            return;
+        }
 
         $file = explode(PHP_EOL, file_get_contents($e->getFile()));
         array_unshift($file, '');
