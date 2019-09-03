@@ -5,7 +5,7 @@ namespace EmilMoe\ErrorReporter;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 
-class ServiceProvider extends LaravelServiceProvider
+class ErrorReporterServiceProvider extends LaravelServiceProvider
 {
     /**
      * Bootstrap any application services.
