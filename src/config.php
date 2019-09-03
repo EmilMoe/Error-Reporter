@@ -7,7 +7,7 @@ return [
     |--------------------------------------------------------------------------
     |
     */
-    'endpoint' => 'https://playground.emilmoe.com/api/error/report',
+    'endpoint' => env('ERROR_REPORTER_ENDPOINT', 'https://playground.emilmoe.com/api/error/report'),
 
     /*
     |--------------------------------------------------------------------------

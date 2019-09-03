@@ -18,6 +18,10 @@ class ServiceProvider extends LaravelServiceProvider
             ExceptionHandler::class,
             Handler::class
         );
+
+        $this->publishes([
+            __DIR__ . '/config.php' => config_path('error-reporter.php')
+        ], 'config');
     }
 
     /**
