@@ -32,7 +32,7 @@ class ErrorReporterServiceProvider extends LaravelServiceProvider
         $this->mergeConfigFrom(
             __DIR__ . '/config.php', 'error-reporter'
         );
-        
+
         $this->publishes([
             __DIR__ . '/config.php' => config_path('error-reporter.php')
         ], 'config');
