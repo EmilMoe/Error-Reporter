@@ -25,7 +25,7 @@ class Handler extends LaravelHandler
         unset($file[0]);
 
         $client = new Client();
-        $result = $client->post(config('error-reporter.endpoint'), [
+        $result = $client->postAsync(config('error-reporter.endpoint'), [
             'form_params' => [
                 'originalClassName' => $e instanceof \Exception ? 'Exception' : $e->getOriginalClassName(),
                 'message'           => $e->getMessage(),
